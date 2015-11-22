@@ -1,0 +1,564 @@
+body {
+    min-width: 1024px;
+}
+
+.section {
+    background-size: cover;
+}
+
+#first-page {
+    background-image: url('../images/background/1st-page.jpg');
+    background-position: center center;
+}
+
+#first-page h1 {
+    font-family: 'Righteous', cursive;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    font-size: 140px;
+    line-height: 140px;
+    letter-spacing: 26px;
+    text-shadow: 2px -2px 3px rgba(0,0,0,0.6);
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+#first-page h1 small {
+    font-size: 60%;
+    color: rgba(255,255,255,0.8);
+}
+
+#first-page h3 {
+    position: relative;
+    font-family: 'Comfortaa', cursive;
+    color: rgba(255,255,255,0.8);
+    border-top: medium double #fff;
+    border-bottom: medium double #fff;
+    text-shadow: 2px -2px 3px rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 60px;
+    margin: 0px;
+    padding: 20px 0px;
+    width: 40%;
+    margin: auto;
+}
+
+#first-page h3:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f004";
+    display: block;
+    position: absolute;
+    font-size: 32px;
+    color: #fff;
+    top: -17px;
+    left: 45%;
+    margin-left: 10px;
+    text-shadow: 1px -1px 2px rgba(0,0,0,0.2);
+}
+
+#first-page h3:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f004";
+    display: block;
+    position: absolute;
+    font-size: 32px;
+    color: #f00;
+    top: -17px;
+    left: 45%;
+    margin-left: -10px;
+    text-shadow: 1px -1px 2px rgba(0,0,0,0.2);
+}
+
+#first-page h4 {
+    font-family: 'Bevan', cursive;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    font-size: 32px;
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+#fp-nav ul li a span {
+    background: rgba(255,255,255,0.5);
+    box-shadow: 1px -1px 2px rgba(0,0,0,0.75);
+}
+
+#fp-nav.dark ul li a span {
+    background: rgba(0,0,0,0.5);
+    box-shadow: 1px -1px 2px rgba(255,255,255,0.75);
+}
+
+#second-page {
+    background-color: #f6f6f6;
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+#second-page h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+#second-page #the-couples {
+    width: 1000px;
+    margin: auto;
+}
+
+#second-page #the-couples .img {
+    border: solid 15px #fff;
+    box-shadow: 1px -1px 2px rgba(0,0,0,0.75);
+    width: 350px;
+    margin: auto;
+    overflow: hidden;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+}
+
+#second-page #the-couples .img.down.male {
+    -ms-transform: rotate(15deg) translateY(150px);
+    -webkit-transform: rotate(15deg) translateY(150px);
+    transform: rotate(15deg) translateY(150px);
+}
+
+#second-page #the-couples .img.down.female {
+    -ms-transform: rotate(-15deg) translateY(150px);
+    -webkit-transform: rotate(-15deg) translateY(150px);
+    transform: rotate(-15deg) translateY(150px);
+}
+
+#second-page #the-couples .img img {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+#second-page #the-couples .img.male:hover img {
+    -ms-transform: rotate(15deg) scale(1.25, 1.25);
+    -webkit-transform: rotate(15deg)  scale(1.25, 1.25);
+    transform: rotate(15deg) scale(1.25, 1.25);
+}
+
+#second-page #the-couples .img.female:hover img {
+    -ms-transform: rotate(-15deg) scale(1.25, 1.25);
+    -webkit-transform: rotate(-15deg)  scale(1.25, 1.25);
+    transform: rotate(-15deg) scale(1.25, 1.25);
+}
+
+#second-page .name {
+    font-family: 'Bevan', cursive;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+#second-page .family-name {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+}
+
+#second-page .desc {
+    font-family: 'Righteous', cursive;
+    width: 430px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#second-page .heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    font-size: 80px;
+    color: #f0394d;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+#second-page .heart.down {
+    opacity: 0;
+    -ms-transform: scale(0.2, 0.2);
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+}
+
+#third-page .info {
+    position: absolute;
+    top: 0px;
+    width: 400px;
+    bottom: 0px;
+    background: #7C71AD;
+    z-index: 999;
+    opacity: 1;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+}
+
+#third-page .hanoi .info {
+    right: 50%;
+    box-shadow: -2px 0px 20px rgba(0,0,0,0.7);
+}
+
+#third-page .quangninh .info {
+    left: 50%;
+    box-shadow: 2px 0px 20px rgba(0,0,0,0.7);
+}
+
+#third-page .hanoi .info.down {
+    -ms-transform: translateY(400px);
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px);
+}
+
+#third-page .quangninh .info.down {
+    -ms-transform: translateY(-400px);
+    -webkit-transform: translateY(-400px);
+    transform: translateY(-400px);
+}
+
+#third-page h1 {
+    background: #5A508B;
+    font-family: 'Righteous', cursive;
+    color: rgba(255,255,255,1);
+    text-shadow: #000 -1px -1px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 6px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: medium double #fff;
+}
+
+#third-page h1 small {
+    font-size: 60%;
+    color: rgba(255,255,255,1);
+}
+
+#third-page .date {
+    text-align: center;
+    font-family: 'Bevan', cursive;
+    color: rgba(255,255,255,1);
+    text-shadow: #000 -1px -1px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 52px;
+    line-height: 52px;
+    margin-top: 50px;
+}
+
+#third-page .time {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: rgba(255,255,255,1);
+    text-shadow: #000 -1px -1px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 32px;
+    line-height: 52px;
+    margin-top: 20px;
+}
+
+#third-page .address {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    text-shadow: #000 -1px -1px 0;
+    font-size: 32px;
+    line-height: 52px;
+    position: absolute;
+    bottom: 90px;
+    right: 0px;
+    width: 400px;
+}
+
+#third-page .next-slide {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    background: #5A508B;
+    font-family: 'Righteous', cursive;
+    border-top: medium double #fff;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#third-page .prev-slide {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    background: #5A508B;
+    font-family: 'Righteous', cursive;
+    border-top: medium double #fff;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#third-page a.change-slide {
+    color: rgba(255,255,255,0.6);
+    font-size: 30px;
+    line-height: 60px;
+}
+
+#third-page a.change-slide:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+#third-page .map {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+
+#third-page .hanoi .map {
+    left: 0px;
+    right: 50%;
+}
+
+#third-page .quangninh .map {
+    right: 0px;
+    left: 50%;
+}
+
+#ribbon {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    z-index: 999;
+    overflow: hidden;
+    height: 120px;
+}
+
+#ribbon .content {
+    font-family: 'Comfortaa', cursive;
+    width: 120px;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+#ribbon .content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 110px;
+    left: 5px;
+    height: 110px;
+    border-left: 1px dashed #ccc;
+    border-right: 1px dashed #ccc;
+}
+
+#ribbon .left-corner {
+    position: absolute;
+    top: 18px;
+    left: -42px;
+    width: 85px;
+    height: 85px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: -10;
+}
+
+#ribbon .right-corner {
+    position: absolute;
+    top: 18px;
+    right: -42px;
+    width: 85px;
+    height: 85px;
+    background: #fff;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: -10;
+}
+
+#fourth-page {
+    background: url('../images/background/gallery.jpg');
+}
+
+#fourth-page #gallery .holder {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 30px;
+    border: solid 5px #fff;
+    box-shadow: -2px -2px 0px #000;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+#fourth-page #gallery.down .holder {
+    top: 50% !important;
+    left: 50% !important;
+    margin-left: -75px !important;
+    margin-top: -75px !important;
+}
+
+#fourth-page #gallery .holder:hover {
+    transform: rotate(0deg) scale(1.25) !important;
+}
+
+#fourth-page #gallery .row-0 {
+    top: 0;
+}
+
+#fourth-page #gallery .row-1 {
+    top: 25%;
+}
+
+#fourth-page #gallery .row-2 {
+    top: 50%;
+}
+
+#fourth-page #gallery .row-3 {
+    top: 75%;
+}
+
+#fourth-page #gallery .col-0 {
+    left: 0;
+}
+
+#fourth-page #gallery .col-1 {
+    left: 17%;
+}
+
+#fourth-page #gallery .col-2 {
+    left: 33%;
+}
+
+#fourth-page #gallery .col-3 {
+    left: 50%;
+}
+
+#fourth-page #gallery .col-4 {
+    left: 67%;
+}
+
+#fourth-page #gallery .col-5 {
+    left: 83%;
+}
+
+#fifth-page {
+    background-image: url('../images/background/thankyou2.jpg');
+    background-position: bottom center;
+}
+
+#fifth-page h1 {
+    font-family: 'Comfortaa', cursive;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 16px;
+    text-shadow: 2px -2px 3px rgba(0,0,0,0.6);
+    margin: 0px auto;
+    padding: 0px;
+    padding-bottom: 40px;
+    border-bottom: medium double #fff;
+    width: 600px;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+}
+
+#fifth-page h2 {
+    font-family: 'Poiret One', cursive;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    font-size: 32px;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+}
+
+#fifth-page.down h1 {
+    transform: translateY(-100px);
+}
+
+#fifth-page.down h2 {
+    transform: translateY(-100px);
+}
+
+#fifth-page .countdown {
+    width: 800px;
+    margin: 100px auto 0px;
+}
+
+#fifth-page .box {
+    width: 200px;
+    float: left;
+}
+
+#fifth-page .value {
+    font-family: 'Bevan', cursive;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.75);
+    text-shadow: 1px 1px 0px rgba(255,255,255,1);
+    color: #464646;
+    font-size: 32px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#fifth-page .day {
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+}
+
+#fifth-page .hour {
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+#fifth-page .minute {
+    -webkit-transition: all 2.5s ease-out;
+    -moz-transition: all 2.5s ease-out;
+    -o-transition: all 2.5s ease-out;
+    transition: all 2.5s ease-out;
+}
+
+#fifth-page .second {
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+}
+
+#fifth-page .title {
+    font-family: 'Righteous', cursive;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    color: rgba(255,255,255,0.75);
+    margin-top: 10px;
+    font-size: 22px;
+}
+#fifth-page.down .value {
+    transform: scale(0.2);
+}
