@@ -1,0 +1,61 @@
+@import 'common';
+
+#first-page {
+    background-image: url('../images/background/1st-page.jpg');
+    color: $white-80;
+        
+    h1 {
+        font-family: $righteous;
+        font-size: 140px;
+        line-height: 140px;
+        letter-spacing: 26px;
+        text-shadow: $inset-white;   
+        padding-bottom: 10px;
+    }
+    
+    h3 {
+        font-family: $comfortaa;
+        @include double-border;
+        text-shadow: $inset-white;
+        font-size: 60px;
+        position: relative;    
+        margin: auto;    
+        padding: 20px 0px;
+        width: 40%;
+        
+        
+    }
+    
+    h3:before {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f004";
+        display: block;
+        position: absolute;
+        font-size: 32px;
+        color: $white;
+        top: -17px;
+        left: 45%;
+        margin-left: 10px;
+        text-shadow: $shadow-soft;
+    }
+        
+    h3:after {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f004";
+        display: block;
+        position: absolute;
+        font-size: 32px;
+        color: $heart;
+        top: -17px;
+        left: 45%;
+        margin-left: -10px;
+        text-shadow: $shadow-soft;
+    }
+    
+    h4 {
+        font-family: $bevan;
+        color: $white;
+        font-size: 32px;
+        padding: 20px 0px;
+    }
+}

@@ -1,0 +1,127 @@
+// Typography
+$righteous: 'Righteous', cursive;
+$comfortaa: 'Comfortaa', cursive;
+$bevan: 'Bevan', cursive;
+$poiret: 'Poiret One', cursive;
+
+// Colors
+$white: #fff;
+$white-80: rgba(255,255,255,0.8);
+$inset-white: 2px -2px 3px rgba(0,0,0,0.6);
+$inset-text-dark:  -1px -1px 0px #000;
+$shadow-soft: 1px -1px 2px rgba(0,0,0,0.2);
+$shadow-hard: 1px -1px 2px rgba(0,0,0,0.75);
+$heart: #f0394d;
+$black: #000;
+$purple: #7C71AD;
+$purple-dark: #5A508B;
+
+// Effects
+@mixin double-border {
+    border-top: medium double #fff;
+    border-bottom: medium double #fff;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition-normal {
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+}
+
+@mixin transition-fairly {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+@mixin transition-fast {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+@mixin transition-slow {
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+@mixin transition-very-slow {
+    -webkit-transition: all 2.5s ease-out;
+    -moz-transition: all 2.5s ease-out;
+    -o-transition: all 2.5s ease-out;
+    transition: all 2.5s ease-out;
+}
+
+@mixin transition-slooooow {
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+}
+
+@mixin rotate-and-scale($deg, $scale) {
+    -ms-transform: rotate($deg) scale($scale, $scale);
+    -webkit-transform: rotate($deg)  scale($scale, $scale);
+    transform: rotate($deg) scale($scale, $scale);
+}
+
+@mixin rotate-and-translateY($deg, $pixel) {
+    -ms-transform: rotate($deg) translateY($pixel);
+    -webkit-transform: rotate($deg) translateY($pixel);
+    transform: rotate($deg) translateY($pixel);
+}
+
+@mixin rotate($deg) {
+    -ms-transform: rotate($deg);
+    -webkit-transform: rotate($deg);    
+    transform: rotate($deg);
+}
+
+@mixin scale($scale) {
+    -ms-transform: scale($scale, $scale);
+    -webkit-transform: scale($scale, $scale);
+    transform: scale($scale, $scale);
+}
+
+@mixin translateY($pixel) {
+    -ms-transform: translateY($pixel);
+    -webkit-transform: translateY($pixel);
+    transform: translateY($pixel);
+}
+
+@mixin faded {
+    opacity: 0;
+    -ms-transform: scale(0.2, 0.2);
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+}
+
+@mixin unfaded {
+    opacity: 1;
+    transform: none;
+}
+
+$frame-large: solid 15px #fff;
+
+// Common layout
+h1, h2, h3, h4 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 small {
+    font-size: 60%;
+}

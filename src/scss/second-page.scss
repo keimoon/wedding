@@ -1,0 +1,102 @@
+#second-page {
+    background-color: #f6f6f6;
+    color: #333;
+    text-align: center;
+    
+    h1 {
+        font-family: $poiret;
+        font-size: 80px;
+    }
+    
+    #the-couple {
+        width: 1000px;
+        margin: 30px auto 0px;
+        
+        .left, .right {
+            width: 50%;
+        }
+        
+        .left {
+            float: left;
+        }
+        
+        .right {
+            float: right;
+        }
+        
+        .img-box {
+            border: $frame-large;
+            box-shadow: $shadow-hard;
+            width: 350px;
+            height: 350px;
+            margin: auto;
+            overflow: hidden;
+            @include transition-normal;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                @include transition-fast;
+            }
+        }
+        
+        .img-box.male {
+            @include rotate-and-translateY(15deg, 150px);
+        }
+        
+        .img-box.female {
+            @include rotate-and-translateY(-15deg, 150px);
+        }
+        
+        .img-box.male:hover img {
+            @include rotate-and-scale(15deg, 1.25);            
+        }
+        
+        .img-box.female:hover img {
+            @include rotate-and-scale(-15deg, 1.25);            
+        }                
+    }
+    
+    .name {
+        font-family: $bevan;
+        font-size: 36px;
+        margin-top: 10px;
+    }
+    
+    .family-name {
+        font-family: $comfortaa;
+        font-size: 12px;
+    }
+    
+    .desc {
+        font-family: $righteous;
+        width: 430px;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+    .heart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        font-size: 80px;
+        color: $heart;
+        @include transition-slow();
+        @include faded();
+    }
+}
+
+#second-page.active {
+    #the-couple {
+        .img-box.male, .img-box.female {
+            transform: none;
+        }
+    }
+    
+    .heart {
+        @include unfaded();
+    }
+}

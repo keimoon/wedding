@@ -16,263 +16,288 @@
 -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Tam &amp; Ninh</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="images/favicon/manifest.json">
 
-        <link href='https://fonts.googleapis.com/css?family=Righteous|Comfortaa|Bevan|Poiret+One' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link type="text/css" rel="stylesheet" href="vendors/fullpage/jquery.fullpage.min.css">
-        <link type="text/css" rel="stylesheet" href="vendors/lightbox/css/lightbox.css">
-        <link type="text/css" rel="stylesheet" href="app/main.css">
-    </head>
-    <body>
-        <div id="fullpage">
-            <div class="section" id="first-page">
-                <h1>T<small>&</small>N</h1>
-                <h3>
-                    We are getting married
-                </h3>
-                <h4>December / 21st / 2015</h4>
-            </div>
-            <div class="section" id="second-page">
-                <h1>The Couple</h1>
-                <div id="the-couples">
-                    <div class="row">
-                        <div class="heart down">
-                            <i class="fa fa-gratipay"></i>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="img male down">
-                                <img src="images/background/male.jpg" width="320" alt="Tam Nguyen">
-                            </div>
-                            <div class="name">Tam</div>
-                            <div class="family-name">Nguyen</div>
-                            <div class="desc">An honest software engineer, gamer and photographer</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="img female down">
-                                <img src="images/background/female.jpg" width="320" alt="Ninh Vu">
-                            </div>
-                            <div class="name">Ninh</div>
-                            <div class="family-name">Vu</div>
-                            <div class="desc">Lady of the Star, for the light of Ilúvatar lives still in her face</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="third-page">
-                <div class="slide hanoi">
-                    <div class="info down">
-                        <h1>Where <small>&amp;</small> When</h1>
-                        <div class="date">
-                            21 . 12 . 2015
-                        </div>
-                        <div class="time">
-                            at five in the afternoon
-                        </div>
-                        <div class="address">
-                            Trong Dong Palace
-                        </div>
-                        <div class="next-slide">
-                            <a class="change-slide">
-                                Quang Ninh <i class="fa fa-chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="map-hanoi" class="map"></div>
-                </div>
-                <div class="slide quangninh">
-                    <div class="info down">
-                        <h1>Where <small>&amp;</small> When</h1>
-                        <div class="date">
-                            24 . 12 . 2015
-                        </div>
-                        <div class="time">
-                            at eleven in the morning
-                        </div>
-                        <div class="address">
-                            Tan Viet Bac Event
-                        </div>
-                        <div class="prev-slide">
-                            <a class="change-slide">
-                                <i class="fa fa-chevron-left"></i> Ha Noi
-                            </a>
-                        </div>
-                    </div>
-                    <div id="map-quangninh" class="map"></div>
-                </div>
-            </div>
-            <div class="section" id="fourth-page">
-                <div id="ribbon">
-                    <div class="content">Gallery</div>
-                    <div class="left-corner"></div>
-                    <div class="right-corner"></div>
-                </div>
-                <div id="gallery" class="down">
-                    <div class="holder row-0 col-1">
-                        <a href="images/gallery/1.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/1.jpg" alt="1" data-name="1.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-0 col-2">
-                        <a href="images/gallery/2.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/2.jpg" alt="2" data-name="2.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-0 col-3">
-                        <a href="images/gallery/3.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/3.jpg" alt="3" data-name="3.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-0 col-4">
-                        <a href="images/gallery/4.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/4.jpg" alt="4" data-name="4.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-0 col-5">
-                        <a href="images/gallery/5.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/5.jpg" alt="5" data-name="5.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-1 col-0">
-                        <a href="images/gallery/6.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/6.jpg" alt="6" data-name="6.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-1 col-1">
-                        <a href="images/gallery/7.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/7.jpg" alt="7" data-name="7.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-1 col-2">
-                        <a href="images/gallery/8.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/8.jpg" alt="8" data-name="8.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-1 col-3">
-                        <a href="images/gallery/9.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/9.jpg" alt="9" data-name="9.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-1 col-4">
-                        <a href="images/gallery/10.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/10.jpg" alt="10" data-name="10.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-1 col-5">
-                        <a href="images/gallery/11.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/11.jpg" alt="11" data-name="11.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-2 col-0">
-                        <a href="images/gallery/12.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/12.jpg" alt="12" data-name="12.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-2 col-1">
-                        <a href="images/gallery/13.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/13.jpg" alt="13" data-name="13.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-2 col-2">
-                        <a href="images/gallery/14.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/14.jpg" alt="14" data-name="14.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-2 col-3">
-                        <a href="images/gallery/15.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/15.jpg" alt="15" data-name="15.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-2 col-4">
-                        <a href="images/gallery/16.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/16.jpg" alt="16" data-name="16.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-2 col-5">
-                        <a href="images/gallery/17.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/17.jpg" alt="17" data-name="17.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-3 col-0">
-                        <a href="images/gallery/18.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/18.jpg" alt="18" data-name="18.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-3 col-1">
-                        <a href="images/gallery/19.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/19.jpg" alt="19" data-name="19.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-3 col-2">
-                        <a href="images/gallery/20.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/20.jpg" alt="20" data-name="20.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-3 col-3">
-                        <a href="images/gallery/21.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/21.jpg" alt="21" data-name="21.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-3 col-4">
-                        <a href="images/gallery/22.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/22.jpg" alt="22" data-name="22.jpg" width="150">
-                        </a>
-                    </div>
-                    <div class="holder row-3 col-5">
-                        <a href="images/gallery/23.jpg" data-lightbox="gallery">
-                            <img src="images/thumb/23.jpg" alt="23" data-name="23.jpg" width="150">
-                        </a>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Tam &amp; Ninh</title>
+    <meta name="viewport" content=e-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    
+    <!-- Social network -->
+    <meta property="og:title" content="Tam &amp; Ninh - T&amp;N">
+    <meta property="og:site_name" content="Tam &amp; Ninh - T&amp;N"/>
+    <meta property="og:description" content="We are getting married on December 21st, 2015">
+    <meta property="og:image" content="http://wedding.keimoon.com/images/gallery/1.jpg"/>
 
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Righteous|Comfortaa|Bevan|Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/fullpage/jquery.fullpage.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/lightbox/css/lightbox.css">
+    <link type="text/css" rel="stylesheet" href="app/main.css">
+</head>
+
+<body>
+    <div id="fullpage">
+        <!-- First page -->
+        <div class="section" id="first-page">
+            <h1>T<small>&</small>N</h1>
+            <h3>
+                We are getting married
+            </h3>
+            <h4>December / 21st / 2015</h4>
+        </div>
+
+        <!-- Second page -->
+        <div class="section" id="second-page">
+            <h1>The Couple</h1>
+            <div id="the-couple">
+                <div class="heart">
+                    <i class="fa fa-gratipay"></i>
                 </div>
-            </div>
-            <div class="section down" id="fifth-page">
-                <h1>Thank <br> you</h1>
-                <h2>And don't miss it</h2>
-                <div class="countdown">
-                    <div class="box">
-                        <div class="value day">00</div>
-                        <div class="title">Days</div>
+                <div class="left">
+                    <div class="img-box male">
+                        <img src="images/background/male.jpg" alt="Tam Nguyen">
                     </div>
-                    <div class="box">
-                        <div class="value hour">00</div>
-                        <div class="title">Hours</div>
+                    <div class="name">Tam</div>
+                    <div class="family-name">Nguyen</div>
+                    <div class="desc">An honest software engineer, gamer and photographer</div>
+                </div>
+                <div class="right">
+                    <div class="img-box female">
+                        <img src="images/background/female.jpg" alt="Ninh Vu">
                     </div>
-                    <div class="box">
-                        <div class="value minute">00</div>
-                        <div class="title">Minutes</div>
-                    </div>
-                    <div class="box">
-                        <div class="value second">00</div>
-                        <div class="title">Seconds</div>
-                    </div>
+                    <div class="name">Ninh</div>
+                    <div class="family-name">Vu</div>
+                    <div class="desc">Lady of the Star, for the light of Ilúvatar lives still in her face</div>
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="vendors/fullpage/jquery.fullpage.min.js"></script>
-        <script src="vendors/lightbox/js/lightbox.min.js"></script>
-        <script src="app/main.js"></script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5aGPdtjqruizotAhrkgsSufYBxazL5ug&callback=initMap">
-        </script>
-    </body>
+        
+        <!-- Third page -->
+        <div class="section" id="third-page">
+            <div class="slide">
+                <div class="info hanoi">
+                    <h1>Where <small>&amp;</small> When</h1>
+                    <h2 class="date">
+                        21 . 12 . 2015
+                    </h2>
+                    <h2 class="time">
+                        at five in the afternoon
+                    </h2>
+                    <h3 class="address">
+                        Trong Dong Palace
+                    </h3>
+                    <div class="footer">
+                        <a class="change-slide-next">
+                            Quang Ninh <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="map-hanoi" class="map"></div>
+            </div>
+            <div class="slide">
+                <div class="info quangninh">
+                    <h1>Where <small>&amp;</small> When</h1>
+                    <h2 class="date">
+                        24 . 12 . 2015
+                    </h2>
+                    <h2 class="time">
+                        at eleven in the morning
+                    </h2>
+                    <h3 class="address">
+                        Tan Viet Bac Event
+                    </h3>
+                    <div class="footer">
+                        <a class="change-slide-prev">
+                            <i class="fa fa-chevron-left"></i> Ha Noi
+                        </a>
+                    </div>
+                </div>
+                <div id="map-quangninh" class="map"></div>
+            </div>
+        </div>
+        
+        <!-- Fourth page -->
+        <div class="section" id="fourth-page">
+            <div id="ribbon">
+                <div class="content">Gallery</div>
+                <div class="corner left"></div>
+                <div class="corner right"></div>
+            </div>
+            <div id="gallery">
+                <div class="holder row-0 col-1">
+                    <a href="images/gallery/1.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/1.jpg" alt="1" data-name="1.jpg">
+                    </a>
+                </div>
+                <div class="holder row-0 col-2">
+                    <a href="images/gallery/2.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/2.jpg" alt="2" data-name="2.jpg">
+                    </a>
+                </div>
+                <div class="holder row-0 col-3">
+                    <a href="images/gallery/3.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/3.jpg" alt="3" data-name="3.jpg">
+                    </a>
+                </div>
+                <div class="holder row-0 col-4">
+                    <a href="images/gallery/4.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/4.jpg" alt="4" data-name="4.jpg">
+                    </a>
+                </div>
+                <div class="holder row-0 col-5">
+                    <a href="images/gallery/5.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/5.jpg" alt="5" data-name="5.jpg">
+                    </a>
+                </div>
+                <div class="holder row-1 col-0">
+                    <a href="images/gallery/6.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/6.jpg" alt="6" data-name="6.jpg">
+                    </a>
+                </div>
+                <div class="holder row-1 col-1">
+                    <a href="images/gallery/7.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/7.jpg" alt="7" data-name="7.jpg">
+                    </a>
+                </div>
+                <div class="holder row-1 col-2">
+                    <a href="images/gallery/8.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/8.jpg" alt="8" data-name="8.jpg">
+                    </a>
+                </div>
+                <div class="holder row-1 col-3">
+                    <a href="images/gallery/9.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/9.jpg" alt="9" data-name="9.jpg">
+                    </a>
+                </div>
+                <div class="holder row-1 col-4">
+                    <a href="images/gallery/10.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/10.jpg" alt="10" data-name="10.jpg">
+                    </a>
+                </div>
+                <div class="holder row-1 col-5">
+                    <a href="images/gallery/11.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/11.jpg" alt="11" data-name="11.jpg">
+                    </a>
+                </div>
+                <div class="holder row-2 col-0">
+                    <a href="images/gallery/12.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/12.jpg" alt="12" data-name="12.jpg">
+                    </a>
+                </div>
+                <div class="holder row-2 col-1">
+                    <a href="images/gallery/13.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/13.jpg" alt="13" data-name="13.jpg">
+                    </a>
+                </div>
+                <div class="holder row-2 col-2">
+                    <a href="images/gallery/14.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/14.jpg" alt="14" data-name="14.jpg">
+                    </a>
+                </div>
+                <div class="holder row-2 col-3">
+                    <a href="images/gallery/15.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/15.jpg" alt="15" data-name="15.jpg" width="150">
+                    </a>
+                </div>
+                <div class="holder row-2 col-4">
+                    <a href="images/gallery/16.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/16.jpg" alt="16" data-name="16.jpg" width="150">
+                    </a>
+                </div>
+                <div class="holder row-2 col-5">
+                    <a href="images/gallery/17.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/17.jpg" alt="17" data-name="17.jpg" width="150">
+                    </a>
+                </div>
+                <div class="holder row-3 col-0">
+                    <a href="images/gallery/18.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/18.jpg" alt="18" data-name="18.jpg" width="150">
+                    </a>
+                </div>
+                <div class="holder row-3 col-1">
+                    <a href="images/gallery/19.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/19.jpg" alt="19" data-name="19.jpg" width="150">
+                    </a>
+                </div>
+                <div class="holder row-3 col-2">
+                    <a href="images/gallery/20.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/20.jpg" alt="20" data-name="20.jpg" width="150">
+                    </a>
+                </div>
+                <div class="holder row-3 col-3">
+                    <a href="images/gallery/21.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/21.jpg" alt="21" data-name="21.jpg" width="150">
+                    </a>
+                </div>
+                <div class="holder row-3 col-4">
+                    <a href="images/gallery/22.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/22.jpg" alt="22" data-name="22.jpg" width="150">
+                    </a>
+                </div>
+                <div class="holder row-3 col-5">
+                    <a href="images/gallery/23.jpg" data-lightbox="gallery">
+                        <img src="images/thumb/23.jpg" alt="23" data-name="23.jpg" width="150">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fifth page -->
+        <div class="section" id="fifth-page">
+            <h1>Thank <br> you</h1>
+            <h2>And don't miss it</h2>
+            <div class="countdown">
+                <div class="box">
+                    <div class="value day">00</div>
+                    <div class="title">Days</div>
+                </div>
+                <div class="box">
+                    <div class="value hour">00</div>
+                    <div class="title">Hours</div>
+                </div>
+                <div class="box">
+                    <div class="value minute">00</div>
+                    <div class="title">Minutes</div>
+                </div>
+                <div class="box">
+                    <div class="value second">00</div>
+                    <div class="title">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="vendors/fullpage/jquery.fullpage.min.js"></script>
+    <script src="vendors/lightbox/js/lightbox.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5aGPdtjqruizotAhrkgsSufYBxazL5ug"></script>
+    <script src="app/main.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-11333338-10', 'auto');
+        ga('send', 'pageview');    
+    </script>
+</body>
+
 </html>

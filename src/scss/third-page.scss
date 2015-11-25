@@ -1,0 +1,121 @@
+$info-width: 400px;
+$footer-padding: 20px;
+
+#third-page {
+	.info {
+		position: absolute;
+		top: 0px;
+		width: $info-width;
+		bottom: 0px;
+        color: $white;        
+		background: $purple;
+        text-shadow: $inset-text-dark;
+		z-index: 999;
+		@include transition-normal;
+        
+        h1 {
+            background: $purple-dark;
+            font-family: $righteous;
+            font-size: 30px;
+            line-height: 60px;
+            letter-spacing: 6px;
+            border-bottom: medium double #fff;
+        }
+        
+        h2 {
+            margin-left: 30px;
+            margin-right: 30px;
+            line-height: 52px;            
+        }
+    
+        h2.date {
+            font-family: $bevan;
+            font-size: 52px;
+            margin-top: 50px;
+        }
+        
+        h2.time {
+            font-family: $comfortaa;
+            font-size: 32px;
+            margin-top: 20px;
+        }
+        
+        h3.address {
+            font-family: $poiret;
+            font-size: 32px;
+            line-height: 52px;
+            position: absolute;
+            bottom: 90px;
+            right: 0px;
+            width: $info-width;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: $info-width - $footer-padding;
+            background: $purple-dark;
+            font-family: $righteous;
+            border-top: medium double #fff;
+            
+            a {
+                color: rgba(255,255,255,0.6);
+                text-shadow: none;
+                font-size: 30px;
+                line-height: 60px;
+            }
+            
+            a:hover {
+                color: rgba(255,255,255,0.8);                
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .info.hanoi {
+        right: 50%;
+        box-shadow: -2px 0px 20px rgba(0,0,0,0.7);
+        @include translateY(400px);
+        
+        .footer {
+            text-align: right;
+            padding-right: $footer-padding;
+        }        
+    }
+    
+    .info.quangninh {
+        left: 50%;
+        box-shadow: 2px 0px 20px rgba(0,0,0,0.7);
+        @include translateY(-400px);
+        
+        .footer {
+            text-align: left;
+            padding-left: $footer-padding;
+        } 
+    }
+    
+    .map {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+    }
+    
+    #map-hanoi {
+        left: 0px;
+        right: 50%;
+    }
+    
+    #map-quangninh {
+        right: 0px;
+        left: 50%;
+    }
+    
+}
+
+#third-page.active {
+    .info.hanoi, .info.quangninh {
+        transform: none;
+    }
+}

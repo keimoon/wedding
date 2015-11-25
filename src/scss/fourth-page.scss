@@ -1,0 +1,128 @@
+#fourth-page {
+    background: url('../images/background/gallery.jpg');
+	
+	#ribbon {
+		position: absolute;
+		top: 0px;
+		left: 50px;
+		z-index: 999;
+		overflow: hidden;
+		height: 120px;
+		
+		.content {
+			font-family: $comfortaa;
+			width: 120px;
+			background: $white;
+			color: $black;
+			font-size: 20px;
+			line-height: 60px;
+			height: 60px;
+			text-align: center;
+		}
+		
+		.content:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 110px;
+			left: 5px;
+			height: 110px;
+			border-left: 1px dashed #ccc;
+			border-right: 1px dashed #ccc;
+		}
+		
+		.corner {
+			position: absolute;
+			top: 18px;
+			width: 85px;
+			height: 85px;
+			background: $white;
+			z-index: -10;
+		}
+		
+		.corner.left {
+			left: -42px;			
+			@include rotate(45deg);
+		}
+		
+		.corner.right {
+			right: -42px;
+			@include rotate(-45deg);
+		}
+	}
+	
+	#gallery {
+		.holder {
+			position: absolute;
+			border: solid 5px #fff;
+			box-shadow: -2px -2px 0px #000;
+			width: 150px;
+			height: 150px;
+			top: 50%;
+			left: 50%;
+			margin-left: -75px;
+			margin-top: -75px;
+			@include transition-fairly;
+		}
+		
+		.holder:hover {
+			@include scale(1.25);
+		}
+		
+		.holder img {
+			width: 100%;
+			height: 100%;
+		}
+				
+	}
+}
+
+#fourth-page.active {
+	#gallery {
+		
+		.holder {
+			margin-top: 10px;
+			margin-left: 30px;
+		}
+		
+		.row-0 {
+			top: 0;
+		}
+		
+		.row-1 {
+			top: 25%;
+		}
+		
+		.row-2 {
+			top: 50%;
+		}
+		
+		.row-3 {
+			top: 75%;
+		}
+		
+		.col-0 {
+			left: 0;
+		}
+		
+		.col-1 {
+			left: 17%;
+		}
+		
+		.col-2 {
+			left: 33%;
+		}
+		
+		.col-3 {
+			left: 50%;
+		}
+		
+		.col-4 {
+			left: 67%;
+		}
+		
+		.col-5 {
+			left: 83%;
+		}
+	}
+}

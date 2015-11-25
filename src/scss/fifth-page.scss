@@ -1,0 +1,96 @@
+#fifth-page {
+    background-image: url('../images/background/thankyou.jpg');
+    background-position: bottom center;
+    
+    h1 {
+        font-family: $comfortaa;
+        color: $white-80;
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 16px;
+        width: 600px;
+        margin: 0px auto;
+        text-shadow: $inset-white;
+        padding-bottom: 40px;
+        border-bottom: medium double #fff; 
+        @include translateY(-100px);     
+        opacity: 0;  
+        @include transition-normal;
+    }
+    
+    h2 {
+        font-family: $poiret;
+        color: $white-80;
+        font-size: 32px;
+        margin-top: 20px;
+        @include translateY(-100px);
+        opacity: 0;
+        @include transition-normal;
+    }
+    
+    .countdown {
+        width: 800px;
+        margin: 100px auto 0px;
+        
+        .box {
+            width: 200px;
+            float: left;
+            
+            .value {
+                font-family: $bevan;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                font-size: 32px;
+                text-align: center;                        
+                margin: auto;
+                @include border-radius(50px);
+                @include scale(0.2);
+                background: rgba(255,255,255,0.75);
+                text-shadow: 1px 1px 0px rgba(255,255,255,1);
+                color: #464646;
+            }
+            
+            .day {
+                @include transition-normal();
+            }
+            
+            .hour {
+                @include transition-slow();
+            }
+            
+            .minute {
+                @include transition-very-slow();
+            }
+            
+            .second {
+                @include transition-slooooow();
+            }
+            
+            .title {
+                font-family: 'Righteous', cursive;
+                width: 100px;
+                margin: auto;
+                text-align: center;
+                color: rgba(255,255,255,0.75);
+                margin-top: 10px;
+                font-size: 22px;
+            }
+        }                
+    }
+}
+
+#fifth-page.active {
+    h1, h2 {
+        transform: none;
+        opacity: 1;
+    }
+    
+    .countdown {
+        .box {
+            .value {
+                transform: none;
+            }
+        }
+    }
+}
