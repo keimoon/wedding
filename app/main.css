@@ -22,7 +22,7 @@ h1 small {
   font-size: 60%; }
 
 #first-page {
-  background-image: url("../images/background/1st-page.jpg");
+  background-image: url("../images/background/1st-page-new.jpg");
   color: rgba(255, 255, 255, 0.8); }
   #first-page h1 {
     font-family: "Righteous", cursive;
@@ -335,7 +335,7 @@ h1 small {
   left: 83%; }
 
 #fifth-page {
-  background-image: url("../images/background/thankyou.jpg");
+  background-image: url("../images/background/thankyou-new.jpg");
   background-position: bottom center; }
   #fifth-page h1 {
     font-family: "Comfortaa", cursive;
